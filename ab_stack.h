@@ -5,7 +5,7 @@
 
 class ArrayBasedStack
 {
-	char* stack = NULL;
+	char** stack = NULL;
 	int top;
 	int capacity;
 
@@ -17,10 +17,12 @@ public:
 	~ArrayBasedStack();
 
 	void push(const char c);
+	void push(const char* str);
 	bool pop();
-	char getTop() const;
+	char* getTop() const;
 	bool isEmpty() const;
 	int getSize() const;
 };
 
 #endif
+
