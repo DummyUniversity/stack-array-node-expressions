@@ -5,16 +5,18 @@
 
 class Node
 {
-	char data;
+	char* data = NULL;
 	Node* next = NULL;
 
 public:
 
 	Node();
-	Node(char data);
-	char getData();
+	Node(const char c);
+	Node(const char* str);
+	char* getData();
 	Node* getNext();
-	void setData(char data);
+	void setData(const char c);
+	void setData(const char* str);
 	void setNext(Node* next);
 };
 
@@ -37,3 +39,4 @@ public:
 };
 
 #endif
+
