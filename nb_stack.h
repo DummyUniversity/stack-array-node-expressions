@@ -33,12 +33,14 @@ public:
 	~NodeBasedStack();
 
 	void push(const char c);
+	void push(const char* str);
 	bool pop();
-	char getTop() const;
+	char* getTop() const;
 	bool isEmpty() const;
 	int getSize() const;
 };
 
 #endif
+
 
 
