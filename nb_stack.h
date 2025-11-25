@@ -11,6 +11,7 @@ class Node
 public:
 
 	Node();
+	~Node();
 	Node(const char c);
 	Node(const char* str);
 	char* getData();
@@ -39,4 +40,5 @@ public:
 };
 
 #endif
+
 
